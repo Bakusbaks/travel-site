@@ -2,9 +2,11 @@ import "../styles/styles.css";
 import "lazysizes";
 import MobileMenu from "./modules/MobileMenu";
 import RevealOnScroll from "./modules/RevealOnScroll";
-import stickyHeader from "./modules/StickyHeader";
+import StickyHeader from "./modules/StickyHeader";
+import ClientArea from "./modules/ClientArea";
 
-let StickyHeader = new stickyHeader();
+new ClientArea();
+new StickyHeader();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
 new RevealOnScroll(document.querySelectorAll(".testimonial"), 60);
 let mobileMenu = new MobileMenu();
